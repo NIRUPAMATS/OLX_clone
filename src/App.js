@@ -1,13 +1,17 @@
-import React from 'react';
+import React,{useEffect,useContext} from 'react';
 import './App.css';
 import {BrowserRouter as Router,Route} from 'react-router-dom'
 import Signup from './Pages/Signup'
+import Login from './Pages/Login';
+import {AuthContext} from './store/FirebaseContext'
 /**
  * ?  =====Import Components=====
  */
 import Home from './Pages/Home';
 
 function App() {
+ 
+
   return (
     <div>
       <Router>
@@ -17,6 +21,10 @@ function App() {
 
         <Route path='/signup'>
           <Signup />
+        </Route>
+
+        <Route path='/login'>
+          <Login/>
         </Route>
       </Router>
     </div>
