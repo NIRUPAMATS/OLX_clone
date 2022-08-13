@@ -48,10 +48,10 @@ function Header() {
           history.push('/login')
         }}>Log out</span>}
         <div className="sellMenu">
-          <SellButton></SellButton>
+          <SellButton ></SellButton>
           <div className="sellMenuContent">
-            <SellButtonPlus></SellButtonPlus>
-            <span>SELL</span>
+            <SellButtonPlus ></SellButtonPlus>
+            <span >SELL</span>
           </div>
         </div>
       </div>
